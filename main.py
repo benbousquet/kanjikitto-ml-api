@@ -14,6 +14,7 @@ def classify():
   processedImg = classifier.process_img(imgDataURL)
 
   prediction = predictor.classify(processedImg, 5)
+  print(prediction)
 
   return jsonify({"predictions": prediction})
 
